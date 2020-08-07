@@ -6,7 +6,7 @@ function Nav() {
   const [navLinks, setNavLinks] = useState([
     {
       name: 'O nás',
-      path: '/onas',
+      path: '/onas/kdojsme',
       id: '1',
       subNavLinks: [
         {
@@ -53,7 +53,7 @@ function Nav() {
     },
     {
       name: 'Enviro- programy',
-      path: '/enviroprogramy',
+      path: '/enviroprogramy/nabidka',
       id: '4',
       subNavLinks: [
         {
@@ -68,7 +68,7 @@ function Nav() {
     },
     {
       name: 'Další aktivity',
-      path: '/dalsiaktivity',
+      path: '/dalsiaktivity/',
       id: '5',
       subNavLinks: [
         {
