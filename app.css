@@ -118,7 +118,7 @@ button {
   text-transform: uppercase;
   padding: 0.5rem;
   border: solid transparent;
-  border-image: url(https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png)
+  border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
     38 repeat;
   border-width: 20px;
   border-image-outset: 3px;
@@ -321,7 +321,7 @@ tr:nth-child(even) {
   background-color: #decbf0;
   color: black;
   border: solid transparent;
-  border-image: url(https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png)
+  border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
     38 repeat;
   border-width: 20px;
   border-image-outset: 3px;
@@ -339,7 +339,7 @@ tr:nth-child(even) {
   padding: 5vh;
   padding-top: 8vh;
   border-top: solid transparent;
-  border-image: url(https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png)
+  border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
     38 repeat;
   border-width: 20px;
   border-image-outset: 3px;
@@ -399,7 +399,7 @@ tr:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2vh 5vh 2vh 5vh;
   border: solid transparent;
-  border-image: url(https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNavB_eki38n.png)
+  border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNavB_eki38n.png')
     38 repeat;
   border-width: 1.3rem;
   border-image-outset: 5px;
@@ -727,7 +727,7 @@ tr:nth-child(even) {
   font-size: 1.3em;
   text-transform: uppercase;
   border: solid transparent;
-  border-image: url(https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png)
+  border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
     38 repeat;
   border-width: 20px;
   border-image-outset: 3px;
@@ -779,7 +779,7 @@ tr:nth-child(even) {
   text-align: left;
   margin: 1vw;
   border: solid transparent;
-  border-image: url(https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png)
+  border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
     38 repeat;
   border-width: 20px;
   border-image-outset: 3px;
@@ -858,7 +858,7 @@ tr:nth-child(even) {
 .aktualita {
   width: 50%;
   border: solid transparent;
-  border-image: url(https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png)
+  border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
     38 repeat;
   border-width: 20px;
   border-image-outset: 3px;
