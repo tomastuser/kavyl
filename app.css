@@ -117,11 +117,12 @@ button {
   font-family: Marianka, 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   padding: 0.5rem;
-  border: solid transparent;
+  border: solid;
   border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
     38 repeat;
   border-width: 20px;
   border-image-outset: 3px;
+
   font-weight: normal;
   margin-top: 2vh;
 }
@@ -778,8 +779,8 @@ tr:nth-child(even) {
   align-items: left;
   text-align: left;
   margin: 1vw;
-  border: solid transparent;
-  border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
+  border: solid;
+  border-image: url(https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png)
     38 repeat;
   border-width: 20px;
   border-image-outset: 3px;

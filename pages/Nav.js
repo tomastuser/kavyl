@@ -100,7 +100,6 @@ function Nav() {
   const [windowWidth, setWidth] = useState(0);
   useEffect(() => {
     setWidth(window.innerWidth);
-    console.log(window.innerWidth);
   }, [windowWidth]);
 
   const [subNavLinksOpen, setSubNavLinksOpen] = useState([

@@ -19,6 +19,9 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {},
+  "cacheDirectories": [
+    ".next/cache"
+  ],
   "author": "Tomáš Tušer",
   "license": "MIT"
 }
