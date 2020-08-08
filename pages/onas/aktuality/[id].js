@@ -13,8 +13,10 @@ const Aktualita = ({ aktualita }) => {
           <div className='aktualitaTelo'>
             <div className='aktualitaImg'>
               {aktualita.Image && (
-                <Link href={`/images/${aktualita.id}`}>
-                  <img src={aktualita.Image.url} alt={aktualita.Nadpis} />
+                <Link href={`/onas/aktuality/foto/${aktualita.id}`}>
+                  <a>
+                    <img src={aktualita.Image.url} alt={aktualita.Nadpis} />
+                  </a>
                 </Link>
               )}
             </div>

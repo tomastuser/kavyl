@@ -19,7 +19,7 @@ const AktualitaZastupce = ({ aktualita }) => {
           }}
         ></div>
       </div>
-      <Link href={`/aktuality/${aktualita.id}`}>
+      <Link href={`/onas/aktuality/${aktualita.id}`}>
         <a className='button'>Celý příspěvek</a>
       </Link>
     </div>

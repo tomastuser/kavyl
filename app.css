@@ -317,11 +317,11 @@ tr:nth-child(even) {
   text-align: left;
   width: 40px;
   height: 40px;
-  padding-bottom: 20px;
-  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-right: 22px;
   background-color: #decbf0;
   color: black;
-  border: solid transparent;
+  border: solid;
   border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
     38 repeat;
   border-width: 20px;
@@ -339,7 +339,7 @@ tr:nth-child(even) {
   align-items: center;
   padding: 5vh;
   padding-top: 8vh;
-  border-top: solid transparent;
+  border-top: solid;
   border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
     38 repeat;
   border-width: 20px;
@@ -399,7 +399,7 @@ tr:nth-child(even) {
 .pozadiPrazdne {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2vh 5vh 2vh 5vh;
-  border: solid transparent;
+  border: solid;
   border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNavB_eki38n.png')
     38 repeat;
   border-width: 1.3rem;
@@ -495,7 +495,7 @@ tr:nth-child(even) {
   top: 10%;
   left: 65%;
   z-index: 3;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 1s ease;
   text-transform: uppercase;
   font-family: Marianka, sans-serif;
@@ -511,7 +511,7 @@ tr:nth-child(even) {
   position: absolute;
   top: 0px;
   z-index: 1;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 1s ease;
 }
 .hlava:hover {
@@ -727,7 +727,7 @@ tr:nth-child(even) {
   font-family: Marianka, 'Roboto Condensed', sans-serif;
   font-size: 1.3em;
   text-transform: uppercase;
-  border: solid transparent;
+  border: solid;
   border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
     38 repeat;
   border-width: 20px;
@@ -858,7 +858,7 @@ tr:nth-child(even) {
 
 .aktualita {
   width: 50%;
-  border: solid transparent;
+  border: solid;
   border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
     38 repeat;
   border-width: 20px;
