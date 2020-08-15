@@ -11,9 +11,16 @@ const Footer2 = () => {
           justifyContent: 'center',
         }}
       >
-        <h3 className='up' onClick={() => window.scrollTo(0, 0)}>
-          <FontAwesomeIcon icon={faArrowUp} size='1x' fixedWidth />
-        </h3>
+        <button
+          className='up'
+          type='button'
+          onClick={() => window.scrollTo(0, 0)}
+          onKeyDown={() => window.scrollTo(0, 0)}
+        >
+          <h3>
+            <FontAwesomeIcon icon={faArrowUp} size='1x' fixedWidth />
+          </h3>
+        </button>
       </div>
     </div>
   );

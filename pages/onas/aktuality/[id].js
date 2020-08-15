@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import fetch from 'isomorphic-unfetch';
+import { PropTypes } from 'prop-types';
 
 const Aktualita = ({ aktualita }) => {
   const router = useRouter();
@@ -14,20 +15,23 @@ const Aktualita = ({ aktualita }) => {
             <div className='aktualitaImg'>
               {aktualita.Image && (
                 <Link href={`/onas/aktuality/foto/${aktualita.id}`}>
-                  <a>
+                  <div type='button'>
                     <img src={aktualita.Image.url} alt={aktualita.Nadpis} />
-                  </a>
+                  </div>
                 </Link>
               )}
             </div>
             <div
               dangerouslySetInnerHTML={{ __html: aktualita.Text }}
               className='aktualitaText'
-            ></div>
+            />
           </div>
           <div
             className='aktualitaButton button'
             onClick={() => router.push('/onas/aktuality')}
+            onKeyDown={() => router.push('/onas/aktuality')}
+            role='button'
+            tabIndex={0}
           >
             Zpět
           </div>
@@ -41,11 +45,16 @@ export async function getServerSideProps(context) {
   const { id } = context.query;
   const res = await fetch(`https://marianka.herokuapp.com/articles/${id}`);
   const aktualita = await res.json();
-  return {
-    props: {
-      aktualita,
-    },
-  };
+  return { props: { aktualita } };
 }
+
+Aktualita.propTypes = {
+  aktualita: PropTypes.shape({
+    Nadpis: PropTypes.string,
+    Text: PropTypes.string,
+    id: PropTypes.number,
+    Image: PropTypes.shape({ url: PropTypes.string }),
+  }).isRequired,
+};
 
 export default Aktualita;

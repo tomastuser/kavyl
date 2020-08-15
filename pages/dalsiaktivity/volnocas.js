@@ -1,5 +1,6 @@
 import React from 'react';
 import Zaklad from '../../components/Zaklad';
+import FotoRandom from '../../components/FotoRandom';
 
 const Volnocas = () => {
   return (
@@ -11,14 +12,10 @@ const Volnocas = () => {
           Na tomto místě uvádíme pravidelně probíhající programy a příklady
           jednorázových akcí. Konkrétní informace a úplný výčet najdete na
           stránkách jednotlivých lesních školek. Přihlášky do aktuálních
-          programů najdete také v sekci{' '}
-          <a href='http://www.lesnikavyl.cz/'>Aktuálně</a>.
+          programů najdete také v sekci
+          <a href='http://www.lesnikavyl.cz/'> Aktuálně.</a>
         </p>
-        <img
-          style={{ width: '50%' }}
-          src='http://www.lesnikavyl.cz/Uploads/krouzky_text.JPG'
-          alt=''
-        />
+        <FotoRandom />
         <h2>Environmentální kroužky pro děti</h2>
         <p>
           <strong>Zvoneček a Výletníček</strong>
@@ -35,13 +32,15 @@ const Volnocas = () => {
           blízkém lese pod vedením lektora z lesního klubu.
         </p>
         <p>
-          Zvoneček (Mariánka) - aktuálně{' '}
-          <a href='http://www.lesnikavyl.cz/aktualne/zvonecek_jaro_2020'>zde</a>
-          .
+          Zvoneček (Mariánka) - aktuálně
+          <a href='http://www.lesnikavyl.cz/aktualne/zvonecek_jaro_2020'>
+            {' '}
+            zde.
+          </a>
         </p>
         <p>
-          Výletníček (Stromík) - aktuálně{' '}
-          <a href='http://www.stromik.cz/jarni-krouzek-vyletnicek'>zde</a>.
+          Výletníček (Stromík) - aktuálně
+          <a href='http://www.stromik.cz/jarni-krouzek-vyletnicek'> zde.</a>
         </p>
         <p>
           <strong>Petrklíč</strong>
@@ -58,9 +57,9 @@ const Volnocas = () => {
         <p>
           Aktuální informace a přihlašování&nbsp;
           <a href='https://docs.google.com/forms/d/e/1FAIpQLSeV9raebPS7BcgGV7k5sDQVRpMjPuCt9vnXmo88TH9AjMarTA/viewform'>
-            zde
+            {' '}
+            zde.
           </a>
-          .
         </p>
         <h2>
           <i>Tvoření v zimní přírodě</i>
@@ -73,13 +72,11 @@ const Volnocas = () => {
         </p>
         <p>
           Aktuální informace -&nbsp;
-          <a href='http://www.lesnikavyl.cz/aktualne/zimni_zvonecek'>
-            Líšeň
-          </a>,{' '}
+          <a href='http://www.lesnikavyl.cz/aktualne/zimni_zvonecek'>Líšeň,</a>
           <a href='http://www.lesnikavyl.cz/aktualne/zimni_vyletnicek'>
-            Pozořice
+            {' '}
+            Pozořice.
           </a>
-          .
         </p>
         <h2>Keramika pro dospělé</h2>
         <p>
@@ -88,11 +85,11 @@ const Volnocas = () => {
           jurty ve Stromíku.
         </p>
         <p>
-          Aktuální informace{' '}
+          Aktuální informace
           <a href='http://www.lesnikavyl.cz/aktualne/keramika_pro_dospele'>
-            zde
+            {' '}
+            zde.
           </a>
-          .
         </p>
       </div>
     </div>

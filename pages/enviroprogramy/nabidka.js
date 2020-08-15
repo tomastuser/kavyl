@@ -25,23 +25,28 @@ const Nabidka = () => {
           komunikují mezi sebou.
         </p>
         <p>
-          <strong>Cílová skupina:</strong>&nbsp;MŠ a 1. stupeň ZŠ.
+          <strong>Cílová skupina:</strong>
+          &nbsp;MŠ a 1. stupeň ZŠ.
         </p>
         <p>
-          <strong>Místo</strong>: areál{' '}
-          <a href='http://www.stromik.cz/kde-nas-najdete'>
-            hájovny Na Jezerách v Pozořicích
-          </a>{' '}
-          a přilehlý les
+          <strong>Místo: </strong>
+          areál
+          <a href='/kontakt'>
+            {' '}
+            hájovny Na Jezerách v Pozořicích a přilehlý les
+          </a>
         </p>
         <p>
-          <strong>Čas:</strong> 9:00 – 12:00 (po domluvě lze posunout)
+          <strong>Čas:</strong>
+          9:00 – 12:00 (po domluvě lze posunout)
         </p>
         <p>
-          <strong>Skupina</strong>: 10 - 30 dětí s doprovodem
+          <strong>Skupina:</strong>
+          10 - 30 dětí s doprovodem
         </p>
         <p>
-          <strong>Cena:</strong> 50 Kč / dítě MŠ, 100 Kč / dítě ZŠ
+          <strong>Cena:</strong>
+          50 Kč / dítě MŠ, 100 Kč / dítě ZŠ
         </p>
         <p>&nbsp;</p>
         <p>Ve školním roce 2020/21 můžete vybírat z této nabídky:</p>

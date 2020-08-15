@@ -1,9 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 function Nav() {
   const [navOpen, setNavOpen] = useState(false);
-  const [navLinks, setNavLinks] = useState([
+  const [navLinks] = useState([
     {
       name: 'O nás',
       path: '/onas/kdojsme',
@@ -123,22 +124,28 @@ function Nav() {
       <div className='nav'>
         <div
           className={navOpen ? 'sideNavSpacerActive' : 'sideNavSpacer'}
-          onClick={() => setNavOpen((navOpen) => (navOpen = false))}
-        ></div>
-        <div className='spacer'></div>
-        <div onClick={() => setNavOpen((navOpen) => (navOpen = false))}>
+          onClick={() => setNavOpen(false)}
+          onKeyDown={() => setNavOpen(false)}
+          role='presentation'
+        />
+        <div className='spacer' />
+        <div
+          onClick={() => setNavOpen(false)}
+          onKeyDown={() => setNavOpen(false)}
+          role='presentation'
+        >
           <div className='logo'>
             <div className='logoCont'>
               <Link href='/'>
                 <img
                   src='https://res.cloudinary.com/tomastuser/image/upload/v1594715441/kavyl-logo-bezpozadi_vaeplo.png'
                   alt=''
-                ></img>
+                />
               </Link>
             </div>
             <div className='logoText'>
               <Link href='/'>
-                <a>
+                <a type='button'>
                   <h1>Kavyl</h1>
                 </a>
               </Link>
@@ -158,7 +165,10 @@ function Nav() {
                     <a
                       className='navLink pointer'
                       onClick={subNavOpeningHandler}
+                      onKeyDown={subNavOpeningHandler}
                       id={link.id}
+                      role='link'
+                      tabIndex={0}
                     >
                       {link.name}
                     </a>
@@ -199,10 +209,16 @@ function Nav() {
           </ul>
         </div>
         <div className='burger-container'>
-          <div className='burger' onClick={() => setNavOpen(!navOpen)}>
-            <div className='line1'></div>
-            <div className='line2'></div>
-            <div className='line3'></div>
+          <div
+            className='burger'
+            onClick={() => setNavOpen(!navOpen)}
+            onKeyDown={() => setNavOpen(!navOpen)}
+            role='button'
+            tabIndex={0}
+          >
+            <div className='line1' />
+            <div className='line2' />
+            <div className='line3' />
           </div>
         </div>
         <img
@@ -211,7 +227,7 @@ function Nav() {
           className='caraNav'
         />
       </div>
-      <div className='navSpacerAtTheTop'></div>
+      <div className='navSpacerAtTheTop' />
     </>
   );
 }

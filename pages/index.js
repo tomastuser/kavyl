@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { PropTypes } from 'prop-types';
 
 import AktualitaZastupce from '../components/AktualitaZastupce';
 import OdrazkyUvod from '../components/uvod/OdrazkyUvod';
@@ -8,7 +9,7 @@ import Andel from '../components/uvod/Andel';
 
 const App = ({ aktuality }) => {
   const serazeniOdNejvyssiho = () => {
-    return [].slice.call(aktuality).sort(function (a, b) {
+    return [].slice.call(aktuality).sort((a, b) => {
       return a - b;
     });
   };
@@ -26,7 +27,7 @@ const App = ({ aktuality }) => {
             <img
               src='https://res.cloudinary.com/tomastuser/image/upload/v1587637533/aezswjs5y9sb8bds5hyhHD_do5byd.jpg'
               alt=''
-            ></img>
+            />
           </div>
           <div className='uvodAktuality'>
             <Andel />
@@ -40,7 +41,13 @@ const App = ({ aktuality }) => {
                 ))}
             </div>
             <Link href='/onas/aktuality'>
-              <a className='button'>Všechny příspěvky</a>
+              <button
+                type='button'
+                className='button'
+                style={{ width: '15%', marginBottom: '0', marginTop: '0' }}
+              >
+                Všechny příspěvky
+              </button>
             </Link>
           </div>
           <div className='pozadiPrazdneContainer'>
@@ -57,10 +64,9 @@ const App = ({ aktuality }) => {
 export async function getServerSideProps() {
   const res = await fetch('https://marianka.herokuapp.com/articles/');
   const aktuality = await res.json();
-  return {
-    props: {
-      aktuality,
-    },
-  };
+  return { props: { aktuality } };
 }
+
+App.propTypes = { aktuality: PropTypes.arrayOf(PropTypes.object).isRequired };
+
 export default App;

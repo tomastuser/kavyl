@@ -1,15 +1,16 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
+import { PropTypes } from 'prop-types';
 
 import ClenTymu from './Tym/ClenTymu';
 
 const Tym = ({ clenove }) => {
   const serazeniOdNejvyssiho = () => {
-    return [].slice.call(clenove).sort(function (a, b) {
+    return [].slice.call(clenove).sort((a, b) => {
       return b.id - a.id;
     });
   };
-  clenove ? (
+  return (
     <div className='tymContainer'>
       <div className='tym'>
         {serazeniOdNejvyssiho()
@@ -19,12 +20,6 @@ const Tym = ({ clenove }) => {
           ))}
       </div>
     </div>
-  ) : (
-    <div className='mainOstatni'>
-      <div className='loading'>
-        <h3>NAHRÁVÁM...</h3>
-      </div>
-    </div>
   );
 };
 
@@ -32,11 +27,9 @@ export async function getServerSideProps() {
   const res = await fetch('https://marianka.herokuapp.com/people');
   const clenove = await res.json();
 
-  return {
-    props: {
-      clenove,
-    },
-  };
+  return { props: { clenove } };
 }
+
+Tym.propTypes = { clenove: PropTypes.arrayOf(PropTypes.object).isRequired };
 
 export default Tym;

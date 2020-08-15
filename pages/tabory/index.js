@@ -1,5 +1,6 @@
 import React from 'react';
 import Zaklad from '../../components/Zaklad';
+import FotoRandom from '../../components/FotoRandom';
 
 const Tabory = () => {
   return (
@@ -17,16 +18,19 @@ const Tabory = () => {
         </p>
         <h3>Tábory 2020</h3>
         <p>
-          Podrobné informace k letošním táborům najdete{' '}
+          Podrobné informace k letošním táborům najdete
           <a href='https://docs.google.com/document/d/1e0RPhQey1kTwfIeXcUfXJs1w5Ax5ULLBlLWi_uKhGMs/edit?ts=5e208598'>
+            {' '}
             zde.
           </a>
           <br />
-          Přihlašovat se můžete online -{' '}
+          Přihlašovat se můžete online -
           <a href='https://docs.google.com/forms/d/e/1FAIpQLSclS51v02DS8Uo3mcNGtgO6i7mWdoe-CidNHxmzBqULWIJYkw/viewform'>
+            {' '}
             PŘIHLÁŠKA.
           </a>
         </p>
+        <FotoRandom />
       </div>
     </div>
   );

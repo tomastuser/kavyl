@@ -105,6 +105,7 @@ button {
   font-size: 1em;
   line-height: 1.5;
   color: #fdfdec;
+  text-decoration: none;
 }
 
 .button {
@@ -154,8 +155,6 @@ tr:nth-child(even) {
   text-align: left;
   align-items: center;
   background: rgba(253, 253, 236, 0.9);
-  border-color: rgba(0, 0, 0, 0.9);
-  border-width: 1px;
   z-index: 50;
 }
 .navLink {
@@ -239,7 +238,7 @@ tr:nth-child(even) {
   text-align: center;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 769px) {
   .navLinks li:hover .subNav li {
     top: 0;
     display: block;
@@ -300,6 +299,16 @@ tr:nth-child(even) {
   display: none;
 }
 
+.fotoRandom {
+  display: flex;
+  justify-content: center;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+}
+.fotoRandom img {
+  width: 60%;
+}
+
 /* PAGES */
 
 .Footer2 {
@@ -350,7 +359,13 @@ tr:nth-child(even) {
   list-style: none;
   line-height: 2.5;
   text-align: left;
-  margin-top: 2vh;
+}
+
+.Footer h3 {
+  margin-bottom: 1vh;
+  font-family: Marianka, 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  color: black;
 }
 
 .Footer img {
@@ -365,6 +380,20 @@ tr:nth-child(even) {
   display: none;
 }
 
+.footerInfo {
+  border: solid;
+  border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
+    38 repeat;
+  border-width: 20px;
+  border-image-outset: 3px;
+}
+
+.FBLogo {
+  float: right;
+  margin-top: 4vh;
+  margin-right: 1vw;
+}
+
 .caraNadpis {
   position: relative;
   width: 120%;
@@ -375,7 +404,7 @@ tr:nth-child(even) {
 
 .uvodAktuality {
   background-color: #fdfdec;
-  padding-bottom: 12vh;
+  padding-bottom: 8vh;
 }
 
 .pozadiFixed {
@@ -697,6 +726,10 @@ tr:nth-child(even) {
   pointer-events: none;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 /* AKTUALITY */
 .aktualityContainer {
   display: flex;
@@ -770,7 +803,7 @@ tr:nth-child(even) {
   padding-left: 8vw;
   padding-right: 8vw;
   grid-gap: 4vw;
-  margin-bottom: 8vh;
+  margin-bottom: 5vh;
 }
 
 .aktualitaZastupce {
@@ -796,10 +829,6 @@ tr:nth-child(even) {
   text-decoration: none;
   text-align: left;
   padding-bottom: 5vh;
-  color: #666666;
-}
-
-.aktualitaZastupceNadpis h4 {
   color: black;
 }
 
@@ -1004,15 +1033,58 @@ tr:nth-child(even) {
 
 /* TABLET NAV */
 
+@media screen and (max-width: 1280px) {
+  .navLinks {
+    width: 70%;
+  }
+  .FooterD {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2vw;
+    padding-top: 4vw;
+  }
+
+  .Footer ul {
+    text-align: center;
+  }
+
+  .Footer img {
+    width: 20vw;
+    margin-bottom: 5vh;
+  }
+  .Footer .fb {
+    margin-bottom: 0vh;
+  }
+  .caraNav {
+    width: 180%;
+  }
+}
+/* TABLET NAV */
+
 @media screen and (max-width: 1024px) {
   .navLinks {
-    width: 80%;
+    width: 90%;
+    margin-right: 0.3vw;
+  }
+  .navLinks a {
+    font-size: 15px;
+  }
+  .logoText a {
+    font-size: 1.8vh;
+  }
+  .logoText {
+    margin-top: 0.2vh;
+  }
+  .logoCont {
+    height: 5vh;
   }
   .logo {
     width: 30%;
     justify-content: space-between;
-
     margin-left: 1vw;
+  }
+  .caraNav {
+    width: 200%;
   }
   .mainTextCont {
     grid-template-columns: 1fr 8fr 1fr;
@@ -1047,25 +1119,7 @@ tr:nth-child(even) {
   .andelCont {
     grid-template-columns: 1fr 4fr 1fr;
   }
-  .FooterD {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 2vw;
-    padding-top: 4vw;
-  }
 
-  .Footer ul {
-    text-align: center;
-    margin-bottom: 5vh;
-  }
-
-  .Footer img {
-    width: 20vw;
-    margin-bottom: 5vh;
-  }
-  .Footer .fb {
-    margin-bottom: 0vh;
-  }
   .foto img {
     max-width: 80vw;
   }
@@ -1090,9 +1144,17 @@ tr:nth-child(even) {
     transition: right 250ms ease;
     text-transform: uppercase;
   }
+  .logoText a {
+    font-size: 2.9vh;
+  }
+  .logoCont {
+    height: 8vh;
+  }
   .navLinks a {
     width: 100%;
     text-align: center;
+    min-height: 9vh;
+    font-size: 16px;
   }
   .navLinks a:hover {
     background-color: rgba(180, 180, 180, 0.2);
@@ -1105,8 +1167,6 @@ tr:nth-child(even) {
   }
   .subNav {
     z-index: 1;
-
-    background-color: #ebebd9;
   }
 
   .sideNavActive {
@@ -1145,6 +1205,10 @@ tr:nth-child(even) {
   .logoText {
     text-align: center;
     margin-left: 2vw;
+  }
+
+  .caraNav {
+    width: 300%;
   }
 
   .mainTextCont {
@@ -1232,11 +1296,11 @@ tr:nth-child(even) {
 
   .Footer ul {
     text-align: center;
-    margin-bottom: 5vh;
   }
   .Footer img {
-    width: 60vw;
-    margin-bottom: 5vh;
+    width: 40vw;
+    margin-top: 5vh;
+    margin-bottom: 0vh;
   }
   .FooterM {
     padding-top: 8vw;
@@ -1246,8 +1310,15 @@ tr:nth-child(even) {
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    border-top-style: dotted;
-    border-width: 1px;
+    border-top: solid;
+    border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
+      38 repeat;
+    border-width: 20px;
+    border-image-outset: 3px;
+  }
+
+  .FBLogo img {
+    margin-top: 0vh;
   }
   .kontaktContD {
     display: none;
@@ -1308,6 +1379,9 @@ tr:nth-child(even) {
 
   .burger-container {
     width: 25%;
+  }
+  .caraNav {
+    width: 440%;
   }
   .aktualita img {
     max-height: none;

@@ -6,25 +6,27 @@ const Andel = () => {
     <div className='andelCont'>
       <div className='andel'>
         <div
-          onClick={() => setKridla((kridlaAct) => !kridlaAct)}
+          onClick={() => setKridla((kridla) => !kridla)}
+          onKeyDown={() => setKridla((kridla) => !kridla)}
           className='andelObrazek'
+          role='presentation'
         >
           <img
             className='hlava'
             src='https://res.cloudinary.com/tomastuser/image/upload/v1587161196/ANDEL_hlava_tu8aho.png'
             alt=''
-          ></img>
+          />
           <div className='dotkni'>klikni!</div>
           <img
             className={kridlaAct ? 'kridlaActive kridla' : 'kridla'}
             src='https://res.cloudinary.com/tomastuser/image/upload/v1587158349/ANDEL_kridla1_d8nlm6.png'
             alt=''
-          ></img>
+          />
           <img
             className='trup'
             src='https://res.cloudinary.com/tomastuser/image/upload/v1587155615/ANDEL_kridla1_j05xh3.png'
             alt=''
-          ></img>
+          />
         </div>
       </div>
     </div>

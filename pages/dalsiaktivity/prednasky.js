@@ -1,5 +1,6 @@
 import React from 'react';
 import Zaklad from '../../components/Zaklad';
+import FotoRandom from '../../components/FotoRandom';
 
 const Prednasky = () => {
   return (
@@ -21,6 +22,7 @@ const Prednasky = () => {
           <li>Kurzy storytellingu pod vedením Martina Háka</li>
           <li>zdravotnický seminář pro průvodce klubů</li>
         </ul>
+        <FotoRandom />
         <h2>Semináře a přednášky na téma ekologie, pěstování, příroda</h2>
         <ul>
           <li>Bylinky na živo – bylinkový zážitkový seminář</li>

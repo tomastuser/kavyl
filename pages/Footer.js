@@ -1,11 +1,15 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import {
+  faPaperPlane,
+  faHome,
+  faPhone,
+} from '@fortawesome/free-solid-svg-icons';
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 
 const Footer = () => {
+  const d = new Date();
+
   return (
     <div className='Footer'>
       <div className='FooterD'>
@@ -25,32 +29,41 @@ const Footer = () => {
             />
           </a>
         </div>
-        <div>
-          <a href='https://www.facebook.com/spolekKavyl/'>
-            <img
-              className='fb'
-              style={{ width: '90px' }}
-              alt=''
-              src='https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg'
-            />
-          </a>
+        <div className='footerInfo'>
           <ul>
             <li>
-              <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />
-              {'  '}
-              info@lesnikavyl.cz
+              <h3>
+                <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />
+                {'  '}
+                info@lesnikavyl.cz
+              </h3>
             </li>
             <li>
-              <FontAwesomeIcon icon={faHome} size='1x' fixedWidth /> Viničné
-              Šumice 137, 664 06
+              <h3>
+                <FontAwesomeIcon icon={faHome} size='1x' fixedWidth />
+                Hostěnická 626, 664 07
+              </h3>
+            </li>
+            <a href='https://www.facebook.com/spolekKavyl/' className='FBLogo'>
+              <img
+                className='fb'
+                style={{ width: '50px' }}
+                alt=''
+                src='https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg'
+              />
+            </a>
+            <li>
+              <h3>
+                <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth />
+                777 145 343
+              </h3>
             </li>
             <li>
-              <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth /> 777 145
-              343
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCopyright} size='1x' fixedWidth /> Kavyl
-              z.s. 2020
+              <h3>
+                <FontAwesomeIcon icon={faCopyright} size='1x' fixedWidth />
+                Kavyl z.s.
+                {d.getFullYear()}
+              </h3>
             </li>
           </ul>
         </div>
@@ -59,7 +72,7 @@ const Footer = () => {
             <img
               src='http://www.lesnimarianka.cz/Data/Sites/1/media/darujme_logo.png'
               alt=''
-            ></img>
+            />
           </a>
         </div>
         <div>
@@ -67,37 +80,46 @@ const Footer = () => {
             <img
               src='http://lesnikvitek.cz/Data/Sites/1/media/uvodni/2017/givt_box_211_211.jpg'
               alt=''
-            ></img>
+            />
           </a>
         </div>
       </div>
       <div className='FooterM'>
-        <div>
-          <a href='https://www.facebook.com/D%C4%9Btsk%C3%BD-lesn%C3%AD-klub-Mari%C3%A1nka-443991749006997/'>
-            <img
-              className='fb'
-              style={{ width: '90px' }}
-              alt=''
-              src='https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg'
-            ></img>
-          </a>
+        <div className='footerInfo'>
           <ul>
             <li>
-              <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />
-              {'  '}
-              info@lesnikavyl.cz
+              <h3>
+                <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />
+                {'  '}
+                info@lesnikavyl.cz
+              </h3>
             </li>
             <li>
-              <FontAwesomeIcon icon={faHome} size='1x' fixedWidth /> Viničné
-              Šumice 137, 664 06
+              <h3>
+                <FontAwesomeIcon icon={faHome} size='1x' fixedWidth />
+                Hostěnická 626, 664 07
+              </h3>
+            </li>
+            <a href='https://www.facebook.com/spolekKavyl/' className='FBLogo'>
+              <img
+                className='fb'
+                style={{ width: '50px' }}
+                alt=''
+                src='https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg'
+              />
+            </a>
+            <li>
+              <h3>
+                <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth />
+                777 145 343
+              </h3>
             </li>
             <li>
-              <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth /> 777 145
-              343
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCopyright} size='1x' fixedWidth /> Kavyl
-              z.s. 2020
+              <h3>
+                <FontAwesomeIcon icon={faCopyright} size='1x' fixedWidth />
+                Kavyl z.s.
+                {d.getFullYear()}
+              </h3>
             </li>
           </ul>
         </div>
@@ -106,7 +128,7 @@ const Footer = () => {
             <img
               src='https://res.cloudinary.com/tomastuser/image/upload/v1585867492/qdc5glp7boyre6m2sd6p.png'
               alt=''
-            ></img>
+            />
           </a>
         </div>
         <div>
@@ -114,7 +136,7 @@ const Footer = () => {
             <img
               src='http://www.lesnimarianka.cz/Data/Sites/1/media/alms_logo_transparentni.gif'
               alt=''
-            ></img>
+            />
           </a>
         </div>
         <div>
@@ -122,7 +144,7 @@ const Footer = () => {
             <img
               src='http://www.lesnimarianka.cz/Data/Sites/1/media/darujme_logo.png'
               alt=''
-            ></img>
+            />
           </a>
         </div>
         <div>
@@ -130,7 +152,7 @@ const Footer = () => {
             <img
               src='http://lesnikvitek.cz/Data/Sites/1/media/uvodni/2017/givt_box_211_211.jpg'
               alt=''
-            ></img>
+            />
           </a>
         </div>
       </div>

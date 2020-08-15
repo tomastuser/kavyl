@@ -9,8 +9,8 @@ const Projekty = () => {
         <h2>Podpora projektů</h2>
         <p>
           Přispět na činnost spolku a jeho projekty můžete jednoduše
-          prostřednictvím portálu{' '}
-          <a href='https://www.darujme.cz/organizace/1200147'>darujme.cz</a>
+          prostřednictvím portálu
+          <a href='https://www.darujme.cz/organizace/1200147'> darujme.cz</a>
         </p>
         <h2>Ten umí to a ten zas tohle (2018)</h2>
         <h2>Rodinné stříbro (2018)</h2>
@@ -44,7 +44,8 @@ const Projekty = () => {
           v&nbsp;jehož rámci budou
           <br />
           senioři dětem vyprávět o tom, jak se žilo dřív a společně budou tvořit
-          – péct chleba v<br />
+          – péct chleba v
+          <br />
           peci, plést z&nbsp;proutí, vyrábět sýry, moštovat apod.
           <br />
           Otevřená zahrada – mezigenerační aktivity v&nbsp;komunitní zahradě
@@ -54,8 +55,8 @@ const Projekty = () => {
         <p>
           Snažíme se, aby lesní klub Stromík byl příjemným místem setkávání. Od
           září 2017 slouží dětem pro odpočinek a spolku jako prostor pro veřejné
-          aktivity nová jurta. Podpořit projekt můžete{' '}
-          <a href='https://www.darujme.cz/projekt/1200631'>zde</a>.
+          aktivity nová jurta. Podpořit projekt můžete
+          <a href='https://www.darujme.cz/projekt/1200631'> zde.</a>
         </p>
         <h2>Jsem nejlepší rodič pro své dítě II (2018)</h2>
         <p>

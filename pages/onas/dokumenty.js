@@ -18,6 +18,11 @@ function Dokumenty() {
             </a>
           </li>
           <li>
+            <a href='http://www.lesnikavyl.cz/Uploads/infoletaky/kavyl%20plakat%20BILY%20NA%20TISK%20(1).jpg'>
+              Infoleták
+            </a>
+          </li>
+          <li>
             <h3>Výroční zprávy:</h3>
             <ul>
               <li>

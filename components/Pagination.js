@@ -1,10 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
 const Pagination = ({ postsPerPage, totalPosts, paginate, strana }) => {
   const pageNumbers = [];
 
-  for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
+  for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i += 1) {
     pageNumbers.push(i);
   }
 
@@ -16,23 +17,28 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, strana }) => {
             <span className='pageLink pageLinkDisabled'>&laquo;</span>
           ) : (
             <Link href={`/onas/aktuality?strana=${strana - 1}`}>
-              <a className='pageLink' onClick={() => paginate(strana - 1)}>
+              <button
+                type='button'
+                className='pageLink'
+                onClick={() => paginate(strana - 1)}
+              >
                 &laquo;
-              </a>
+              </button>
             </Link>
           )}
         </li>
         {pageNumbers.map((number) => (
           <li key={number} className='pageItem'>
             <Link href={`/onas/aktuality?strana=${number}`}>
-              <a
+              <button
+                type='button'
                 className={
                   number === strana ? 'pageLink pageLinkActive' : 'pageLink'
                 }
                 onClick={() => paginate(number)}
               >
                 {number}
-              </a>
+              </button>
             </Link>
           </li>
         ))}
@@ -41,15 +47,26 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, strana }) => {
             <span className='pageLink pageLinkDisabled'>&raquo;</span>
           ) : (
             <Link href={`/onas/aktuality?strana=${strana + 1}`}>
-              <a className='pageLink' onClick={() => paginate(strana + 1)}>
+              <button
+                type='button'
+                className='pageLink'
+                onClick={() => paginate(strana + 1)}
+              >
                 &raquo;
-              </a>
+              </button>
             </Link>
           )}
         </li>
       </ul>
     </nav>
   );
+};
+
+Pagination.propTypes = {
+  postsPerPage: PropTypes.number.isRequired,
+  totalPosts: PropTypes.number.isRequired,
+  paginate: PropTypes.func.isRequired,
+  strana: PropTypes.number.isRequired,
 };
 
 export default Pagination;

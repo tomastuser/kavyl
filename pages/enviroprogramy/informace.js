@@ -10,12 +10,15 @@ const Informace = () => {
           <strong>Jak si program objednat?</strong>
         </p>
         <p>
-          1. Vyplňte <strong>nezávaznou přihlášku</strong>{' '}
+          1. Vyplňte
+          <strong> nezávaznou přihlášku</strong>
           <a href='https://docs.google.com/forms/d/e/1FAIpQLSd812mIpEF81daVAxbviXo-Bv0x87qqm_jPZWXluASwxTKoNw/viewform'>
+            {' '}
             zde
           </a>
-          ,&nbsp;nebo nás kontaktujte prostřednictvím e-mailu{' '}
-          <strong>evvo@lesnikavyl.cz</strong>.&nbsp;
+          ,&nbsp;nebo nás kontaktujte prostřednictvím e-mailu
+          <strong> evvo@lesnikavyl.cz</strong>
+          .&nbsp;
         </p>
         <p>Nahlaste nám prosím:</p>
         <ul>

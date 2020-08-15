@@ -1,26 +1,28 @@
 import React, { useState } from 'react';
 import fetch from 'isomorphic-unfetch';
+import { PropTypes } from 'prop-types';
 
 import Pagination from '../../../components/Pagination';
 import AktualitaZastupce from '../../../components/AktualitaZastupce';
 
 const Aktuality = ({ aktuality, strana }) => {
+  const [stranaB, setstranaB] = useState(strana);
   const [postsPerPage] = useState(6);
 
   const serazeniOdNejvyssiho = () => {
-    return [].slice.call(aktuality).sort(function (a, b) {
+    return [].slice.call(aktuality).sort((a, b) => {
       return b.id - a.id;
     });
   };
 
-  const indexOfLastPost = strana * postsPerPage;
+  const indexOfLastPost = stranaB * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const aktualityZde = serazeniOdNejvyssiho().slice(
     indexOfFirstPost,
     indexOfLastPost
   );
 
-  const paginate = (pageNumber) => (strana = pageNumber);
+  const paginate = (pageNumber) => setstranaB(pageNumber);
   return (
     <div className='mainOstatni'>
       <div className='aktualityContainer'>
@@ -36,7 +38,7 @@ const Aktuality = ({ aktuality, strana }) => {
           postsPerPage={postsPerPage}
           totalPosts={aktuality.length}
           paginate={paginate}
-          strana={strana}
+          strana={stranaB}
         />
       </div>
     </div>
@@ -54,5 +56,10 @@ export async function getServerSideProps({ query: { strana = 1 } }) {
     },
   };
 }
+
+Aktuality.propTypes = {
+  strana: PropTypes.number.isRequired,
+  aktuality: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default Aktuality;

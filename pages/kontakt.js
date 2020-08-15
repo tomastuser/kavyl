@@ -8,19 +8,22 @@ function Kontakt() {
         <Zaklad nazev='Kontakt' />
         <div className='kontaktContD'>
           <div className='kontaktA'>
-            <h3>Kde nás najdete</h3> <p>Viničné Šumice č. p. 137, 664 06</p>
+            <h3>Kde nás najdete</h3>
+            <p>Hostěnická 626, Pozořice, 664 07</p>
             <div className='mapouterD'>
               <div className='gmap_canvas'>
                 <iframe
                   id='gmap_canvas'
-                  src='https://maps.google.com/maps?q=Vini%C4%8Dn%C3%A9%20%C5%A0umice%20137&t=&z=13&ie=UTF8&iwloc=&output=embed'
+                  src='https://maps.google.com/maps?q=Host%C4%9Bnick%C3%A1%20626&t=&z=13&ie=UTF8&iwloc=&output=embed'
                   scrolling='no'
                   marginHeight={0}
                   marginWidth={0}
                   width={320}
                   height={320}
                   frameBorder={0}
+                  title='gmap_canvas'
                 />
+                <a href='https://putlocker-is.org'>putlocker</a>
               </div>
               <style
                 dangerouslySetInnerHTML={{
@@ -42,12 +45,13 @@ function Kontakt() {
               <br />
               <li>Datová schránka: itb74qd</li>
             </ul>
-            <h3>Klára Krchňavá</h3>{' '}
+            <h3>Klára Krchňavá</h3>
             <ul>
               <li>tel.: 604 536 796</li>
               <li>e-mail: klara.krchnava@lesnikavyl.cz</li>
             </ul>
-            <h3>Obecné informace:</h3> <p>e-mail: info@lesnikavyl.cz</p>
+            <h3>Obecné informace:</h3>
+            <p>e-mail: info@lesnikavyl.cz</p>
             <h3>Enviroprogramy:</h3>
             <p>e-mail: evvo@lesnikavyl.cz</p>
             <h3>dotace, finance:</h3>
@@ -59,19 +63,22 @@ function Kontakt() {
 
         <div className='kontaktContM'>
           <div className='kontaktA'>
-            <h3>Kde nás najdete</h3> <p>Viničné Šumice č. p. 137, 664 06</p>
+            <h3>Kde nás najdete</h3>
+            <p>Hostěnická 626, Pozořice, 664 07</p>
             <div className='mapouterM'>
               <div className='gmap_canvas'>
                 <iframe
                   id='gmap_canvas'
-                  src='https://maps.google.com/maps?q=Vini%C4%8Dn%C3%A9%20%C5%A0umice%20137&t=&z=13&ie=UTF8&iwloc=&output=embed'
+                  src='https://maps.google.com/maps?q=Host%C4%9Bnick%C3%A1%20626&t=&z=13&ie=UTF8&iwloc=&output=embed'
                   scrolling='no'
                   marginHeight={0}
                   marginWidth={0}
                   width={320}
                   height={320}
                   frameBorder={0}
+                  title='gmap_canvas'
                 />
+                <a href='https://putlocker-is.org'>putlocker</a>
               </div>
               <style
                 dangerouslySetInnerHTML={{
@@ -100,7 +107,8 @@ function Kontakt() {
               <br />
               e-mail: klara.krchnava@lesnikavyl.cz
             </p>
-            <h3>Obecné informace:</h3> <p>e-mail: info@lesnikavyl.cz</p>
+            <h3>Obecné informace:</h3>
+            <p>e-mail: info@lesnikavyl.cz</p>
             <h3>Enviroprogramy:</h3>
             <p>e-mail: evvo@lesnikavyl.cz</p>
             <h3>dotace, finance:</h3>

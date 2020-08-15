@@ -1,4 +1,6 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
+
 import Kytky from './Kytky';
 import Kytky2 from './Kytky2';
 
@@ -15,5 +17,7 @@ const Zaklad = ({ nazev }) => {
     </div>
   );
 };
+
+Zaklad.propTypes = { nazev: PropTypes.string.isRequired };
 
 export default Zaklad;

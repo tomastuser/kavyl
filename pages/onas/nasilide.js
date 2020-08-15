@@ -1,11 +1,12 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
+import { PropTypes } from 'prop-types';
 
 import ClenTymu from '../../components/Tym/ClenTymu';
 
 function NasiLide({ clenove }) {
   const serazeniOdNejvyssiho = () => {
-    return [].slice.call(clenove).sort(function (a, b) {
+    return [].slice.call(clenove).sort((a, b) => {
       return b.id - a.id;
     });
   };
@@ -31,11 +32,11 @@ export async function getServerSideProps() {
   const res = await fetch('https://marianka.herokuapp.com/people');
   const clenove = await res.json();
 
-  return {
-    props: {
-      clenove,
-    },
-  };
+  return { props: { clenove } };
 }
+
+NasiLide.propTypes = {
+  clenove: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default NasiLide;
