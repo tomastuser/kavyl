@@ -1,6 +1,5 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 
 const Footer2 = () => {
@@ -21,7 +20,7 @@ const Footer2 = () => {
             onKeyDown={() => window.scrollTo(0, 0)}
           >
             <h3>
-              <FontAwesomeIcon icon={faArrowUp} size='1x' fixedWidth />
+              <img alt='sipka' src='/sipka.png' />
             </h3>
           </button>
         </div>

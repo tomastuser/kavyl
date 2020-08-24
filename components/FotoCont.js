@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const FotoRandom = () => {
+const FotoCont = () => {
   const [fotoURLs] = useState([
     'https://res.cloudinary.com/tomastuser/image/upload/v1597492196/IMG_7337_bfy9ew.jpg',
     'https://res.cloudinary.com/tomastuser/image/upload/v1597492196/DSC_0103_vuw73u.jpg',
@@ -19,8 +19,8 @@ const FotoRandom = () => {
   const [randomFoto] = useState(Math.floor(Math.random() * fotoURLs.length));
 
   return (
-    <div className='fotoRandom'>
-      <div className='fotoRandomImg'>
+    <div className='fotoCont'>
+      <div className='fotoContImg'>
         {fotoURLs.map(
           (url, index) =>
             index === randomFoto && <img alt={randomFoto} src={url} />
@@ -30,4 +30,4 @@ const FotoRandom = () => {
   );
 };
 
-export default FotoRandom;
+export default FotoCont;

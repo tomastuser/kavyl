@@ -1,14 +1,17 @@
 import React from 'react';
 import Zaklad from '../../components/Zaklad';
+import Layout from './../../components/Layout';
 
 const Jurta = () => {
   return (
-    <div className='mainTextCont'>
-      <div className='mainText'>
-        <Zaklad nazev='Pronájem Jurty' />
-        <p> Je možné pronajmout si Jurtu.</p>
+    <Layout title='Jurta'>
+      <div className='mainTextCont'>
+        <div className='mainText'>
+          <Zaklad nazev='Pronájem Jurty' />
+          <p> Je možné pronajmout si Jurtu.</p>
+        </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

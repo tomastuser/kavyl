@@ -4,6 +4,7 @@ import { PropTypes } from 'prop-types';
 
 import Pagination from '../../../components/Pagination';
 import AktualitaZastupce from '../../../components/AktualitaZastupce';
+import Layout from './../../../components/Layout';
 
 const Aktuality = ({ aktuality, strana }) => {
   const [stranaB, setstranaB] = useState(strana);
@@ -24,28 +25,30 @@ const Aktuality = ({ aktuality, strana }) => {
 
   const paginate = (pageNumber) => setstranaB(pageNumber);
   return (
-    <div className='mainOstatni'>
-      <div className='aktualityContainer'>
-        <h1>Aktuality</h1>
-        <br />
-        <div className='aktuality'>
-          {aktualityZde.map((aktualita, index) => (
-            <AktualitaZastupce
-              key={aktualita.id}
-              aktualita={aktualita}
-              pozadi={`aktualitaPozadi${index + 1}`}
-            />
-          ))}
+    <Layout title='Aktuality'>
+      <div className='mainOstatni'>
+        <div className='aktualityContainer'>
+          <h1>Aktuality</h1>
+          <br />
+          <div className='aktuality'>
+            {aktualityZde.map((aktualita, index) => (
+              <AktualitaZastupce
+                key={aktualita.id}
+                aktualita={aktualita}
+                pozadi={`aktualitaPozadi${index + 1}`}
+              />
+            ))}
+          </div>
+          <br />
+          <Pagination
+            postsPerPage={postsPerPage}
+            totalPosts={aktuality.length}
+            paginate={paginate}
+            strana={stranaB}
+          />
         </div>
-        <br />
-        <Pagination
-          postsPerPage={postsPerPage}
-          totalPosts={aktuality.length}
-          paginate={paginate}
-          strana={stranaB}
-        />
       </div>
-    </div>
+    </Layout>
   );
 };
 

@@ -33,7 +33,7 @@ const Uvod = () => {
           <br />
           na &nbsp;lukách
           <br />
-          a&nbsp;&nbsp; v &nbsp;LESÍCH
+          a&nbsp;&nbsp; v &nbsp;lesích
         </div>
       </div>
       <div

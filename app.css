@@ -128,7 +128,7 @@ button {
   margin-top: 2vh;
 }
 .button:hover {
-  background-color: rgb(231, 231, 231);
+  background-color: #eeeed3;
   color: black;
 }
 
@@ -302,14 +302,14 @@ tr:nth-child(even) {
   display: none;
 }
 
-.fotoRandom {
+.fotoCont {
   display: flex;
   justify-content: center;
   margin-top: 6vh;
   margin-bottom: 6vh;
 }
 
-.fotoRandomImg {
+.fotoContImg {
   max-width: 90%;
   background-repeat: no-repeat;
   background-image: url(./public/LH_ramecek_foto.png),
@@ -318,7 +318,7 @@ tr:nth-child(even) {
   background-position: left top, left bottom, right top, right bottom;
   background-size: 25px;
 }
-.fotoRandom img {
+.fotoCont img {
   max-height: 80vh;
   max-width: 100%;
   border-radius: 60px;
@@ -331,32 +331,39 @@ tr:nth-child(even) {
 /* PAGES */
 
 .Footer2 {
-  background-color: #fdfdec;
-  padding-top: 3vh;
+  background-color: #fff1fa;
+  padding-top: 0vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 8vh;
+  padding-bottom: 4vh;
+  border-bottom: solid;
+  border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
+    38 repeat;
+  border-width: 20px;
+  border-image-outset: 1px;
 }
 
 .up {
   cursor: pointer;
   text-align: left;
-  width: 40px;
-  height: 40px;
-  padding-bottom: 24px;
-  padding-right: 22px;
-  background-color: #fdfdec;
+  padding: 10px 12px 4px 12px;
+  transform: rotate(180deg);
+
+  background-color: transparent;
   color: black;
   border: solid;
   border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
     38 repeat;
-  border-width: 20px;
+  border-image-width: 20px;
   border-image-outset: 3px;
 }
+.up img {
+  height: 7vh;
+}
 .up:hover {
-  background-color: rgb(231, 231, 231);
+  background-color: rgba(253, 253, 236, 0.8);
 }
 
 .copyright {
@@ -364,22 +371,22 @@ tr:nth-child(even) {
   flex-direction: column;
   justify-content: center;
   padding: 20px;
+  background-color: #fdfdec;
 }
 
 .copyright h3 {
   font-family: Marianka, 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
-  color: #fdfdec;
+  color: black;
 }
 
 .FooterD {
-  background-color: #fdfdec;
+  background-color: #fff1fa;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5vh;
-  padding-top: 8vh;
+  padding: 25vh 8vw 5vh 8vw;
   border-top: solid;
   border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
     38 repeat;
@@ -401,7 +408,7 @@ tr:nth-child(even) {
 }
 
 .Footer img {
-  width: 15vw;
+  width: 8vw;
 }
 
 .Footer img:hover {
@@ -424,13 +431,29 @@ tr:nth-child(even) {
     url(./public/PD_ramecek_foto.png);
   background-position: left top, left bottom, right top, right bottom;
   background-size: 25px;
-  padding: 1vw;
+  padding: 2.2vw 3.3vw 2vw 3.3vw;
 }
 
-.FBLogo {
-  float: right;
-  margin-top: 4vh;
-  margin-right: 1vw;
+.footerInfo a {
+  color: black;
+}
+.footerInfo a:hover {
+  color: rgb(63, 63, 63);
+}
+
+.girlanda {
+  background-color: #fdfdec;
+  display: flex;
+  justify-content: center;
+  padding: 3vh 0 0vh 0;
+  margin-bottom: -28vh;
+}
+.girlanda img {
+  width: 90%;
+}
+
+.girlanda img:hover {
+  opacity: 100;
 }
 
 .caraNadpis {

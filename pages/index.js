@@ -1,11 +1,11 @@
 import React from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
 import { PropTypes } from 'prop-types';
 
 import AktualitaZastupce from '../components/AktualitaZastupce';
 import OdrazkyUvod from '../components/uvod/OdrazkyUvod';
 import Uvod from '../components/uvod/Uvod';
+import Layout from '../components/Layout';
 
 const App = ({ aktuality }) => {
   const serazeniOdNejvyssiho = () => {
@@ -15,12 +15,7 @@ const App = ({ aktuality }) => {
   };
 
   return (
-    <>
-      <Head>
-        <title>Kavyl</title>
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-      </Head>
-
+    <Layout title='Úvodní stránka'>
       <div className='App'>
         <div className='Uvod'>
           <div className='pozadiFixed'>
@@ -66,7 +61,7 @@ const App = ({ aktuality }) => {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   );
 };
 

@@ -3,6 +3,7 @@ import fetch from 'isomorphic-unfetch';
 import { PropTypes } from 'prop-types';
 
 import ClenTymu from '../../components/Tym/ClenTymu';
+import Layout from './../../components/Layout';
 
 function NasiLide({ clenove }) {
   const serazeniOdNejvyssiho = () => {
@@ -11,20 +12,22 @@ function NasiLide({ clenove }) {
     });
   };
   return (
-    <div className='mainOstatni'>
-      <div className='nasTym'>
-        <h1>Náš tým</h1>
-        <div className='tymContainer'>
-          <div className='tym'>
-            {serazeniOdNejvyssiho()
-              .reverse()
-              .map((clen) => (
-                <ClenTymu key={clen.id} clen={clen} />
-              ))}
+    <Layout title='Naši lidé'>
+      <div className='mainOstatni'>
+        <div className='nasTym'>
+          <h1>Náš tým</h1>
+          <div className='tymContainer'>
+            <div className='tym'>
+              {serazeniOdNejvyssiho()
+                .reverse()
+                .map((clen) => (
+                  <ClenTymu key={clen.id} clen={clen} />
+                ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }
 

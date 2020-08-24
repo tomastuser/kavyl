@@ -120,7 +120,7 @@ function Nav() {
     setSubNavLinksOpen(subs);
   };
   return (
-    <>
+    <nav>
       <div className='nav'>
         <div
           className={navOpen ? 'sideNavSpacerActive' : 'sideNavSpacer'}
@@ -226,7 +226,7 @@ function Nav() {
         />
       </div>
       <div className='navSpacerAtTheTop' />
-    </>
+    </nav>
   );
 }
 

@@ -2,36 +2,39 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import fetch from 'isomorphic-unfetch';
 import { PropTypes } from 'prop-types';
+import Layout from './../../../../components/Layout';
 
 const Foto = ({ aktualita }) => {
   const router = useRouter();
   return (
-    <div className='mainOstatni'>
-      <div className='fotoContainer'>
-        <div className='foto'>
-          {aktualita.Image ? (
-            <img
-              src={aktualita.Image.url}
-              alt={aktualita.Nadpis}
+    <Layout title={`Foto č. ${aktualita.id}`}>
+      <div className='mainOstatni'>
+        <div className='fotoContainer'>
+          <div className='foto'>
+            {aktualita.Image ? (
+              <img
+                src={aktualita.Image.url}
+                alt={aktualita.Nadpis}
+                onClick={() => router.push(`/onas/aktuality/${aktualita.id}`)}
+                onKeyDown={() => router.push(`/onas/aktuality/${aktualita.id}`)}
+                role='presentation'
+              />
+            ) : (
+              <h1>Foto neexistuje</h1>
+            )}
+            <div
+              className='button'
               onClick={() => router.push(`/onas/aktuality/${aktualita.id}`)}
               onKeyDown={() => router.push(`/onas/aktuality/${aktualita.id}`)}
-              role='presentation'
-            />
-          ) : (
-            <h1>Foto neexistuje</h1>
-          )}
-          <div
-            className='button'
-            onClick={() => router.push(`/onas/aktuality/${aktualita.id}`)}
-            onKeyDown={() => router.push(`/onas/aktuality/${aktualita.id}`)}
-            role='button'
-            tabIndex={0}
-          >
-            Zpět
+              role='button'
+              tabIndex={0}
+            >
+              Zpět
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
