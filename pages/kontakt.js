@@ -47,7 +47,7 @@ function Kontakt() {
             </ul>
             <h3>Klára Krchňavá</h3>
             <ul>
-              <li>tel.: 604 536 796</li>
+              <li>tel.: 777 145 343</li>
               <li>e-mail: klara.krchnava@lesnikavyl.cz</li>
             </ul>
             <h3>Obecné informace:</h3>

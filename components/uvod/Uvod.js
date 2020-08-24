@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Uvod = () => {
+  const [counter, setCounter] = useState(0);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      counter < 1 ? setCounter(counter + 1) : setCounter(0);
+    }, 6000);
+    return () => clearInterval(timer);
+  });
   return (
     <div className='uvodStredCont'>
       <div className='uvodSliderCont'>
@@ -11,10 +18,18 @@ const Uvod = () => {
           />
         </div>
       </div>
-
       <div className='vitejteCont'>
-        <div className='vitejte'>
-          Spolek, který vrací dětem přírodu a dětství na lukách a v lesích
+        <div className={`vitejte ${counter === 0 ? 'active' : 'disabled'}`}>
+          Vítejte
+          <br />
+          na&nbsp; stránkách&nbsp; Kavylu!
+        </div>
+        <div className={`vitejte ${counter === 1 ? 'active' : 'disabled'}`}>
+          SPOLKU,
+          <br />
+          KTERÝ &nbsp;VRACÍ &nbsp;DĚTEM&nbsp; PŘÍRODU
+          <br />
+          A&nbsp; DĚTSTVÍ&nbsp; NA &nbsp;LUKÁCH A&nbsp;&nbsp; V &nbsp;LESÍCH
         </div>
       </div>
       <div
@@ -24,7 +39,7 @@ const Uvod = () => {
         role='button'
         tabIndex={0}
       >
-        ↓
+        <img alt='sipka' src='/sipky.png' />
       </div>
     </div>
   );

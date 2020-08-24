@@ -134,23 +134,21 @@ function Nav() {
           onKeyDown={() => setNavOpen(false)}
           role='presentation'
         >
-          <div className='logo'>
-            <div className='logoCont'>
-              <Link href='/'>
-                <img
-                  src='https://res.cloudinary.com/tomastuser/image/upload/v1594715441/kavyl-logo-bezpozadi_vaeplo.png'
-                  alt=''
-                />
-              </Link>
-            </div>
-            <div className='logoText'>
-              <Link href='/'>
-                <a type='button'>
+          <Link href='/'>
+            <a type='button'>
+              <div className='logo'>
+                <div className='logoCont'>
+                  <img
+                    src='https://res.cloudinary.com/tomastuser/image/upload/v1594715441/kavyl-logo-bezpozadi_vaeplo.png'
+                    alt=''
+                  />
+                </div>
+                <div className='logoText'>
                   <img src='/kavyl.png' alt='Kavyl logo' />
-                </a>
-              </Link>
-            </div>
-          </div>
+                </div>
+              </div>
+            </a>
+          </Link>
         </div>
         <div
           className={

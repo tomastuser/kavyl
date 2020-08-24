@@ -13,5 +13,6 @@ module.exports = {
     'react/no-danger': ['off'],
     'no-nested-ternary': ['off'],
     'react/jsx-props-no-spreading': ['off'],
+    'no-unused-expressions': ['error', { allowTernary: true }],
   },
 };
