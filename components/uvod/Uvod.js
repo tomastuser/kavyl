@@ -19,17 +19,14 @@ const Uvod = () => {
         </div>
       </div>
       <div className='vitejteCont'>
-        <div
-          className={`vitejte ${counter === 0 ? 'active' : 'disabled'}`}
-          style={{ left: '38%', top: '25%' }}
-        >
+        <div className={`vitejte1 ${counter === 0 ? 'active' : 'disabled'}`}>
           Vítejte
           <br />
           na&nbsp; stránkách
           <br />
-          spolku&nbsp; Kavyl!
+          spolku&nbsp; Kavyl !
         </div>
-        <div className={`vitejte ${counter === 1 ? 'active' : 'disabled'}`}>
+        <div className={`vitejte2 ${counter === 1 ? 'active' : 'disabled'}`}>
           Vracíme &nbsp;dětem
           <br />
           přírodu a&nbsp; dětství

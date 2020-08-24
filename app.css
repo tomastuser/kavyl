@@ -213,15 +213,16 @@ tr:nth-child(even) {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 3vh;
+  margin-top: 1.5vh;
 }
 
 .logoText img {
-  max-height: 11vh;
+  max-height: 8vh;
+  margin-top: 0.5vh;
 }
 
 .logoCont {
-  height: 8vh;
+  height: 7vh;
   margin-right: 1vw;
 }
 
@@ -448,10 +449,11 @@ tr:nth-child(even) {
 .pozadiFixed {
   position: fixed;
   width: 100vw;
-  bottom: 50%;
+  bottom: 48%;
   left: 50%;
   margin-bottom: -50vh;
   margin-left: -50vw;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -599,16 +601,22 @@ tr:nth-child(even) {
   left: 0;
   display: flex;
   justify-content: center;
-}
-.vitejte {
-  position: absolute;
+  font-size: 2.25rem;
+  text-align: center;
+  color: rgb(253, 253, 236);
   font-family: Marianka, 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
-  color: rgb(253, 253, 236);
-  text-align: center;
+}
+.vitejte1 {
+  position: absolute;
+
+  top: 22%;
+  left: 38%;
+}
+.vitejte2 {
+  position: absolute;
   top: 23%;
   left: 36%;
-  font-size: 2.25rem;
 }
 
 .UvodTextCont {
@@ -1169,6 +1177,16 @@ tr:nth-child(even) {
   .navLinks {
     width: 70%;
   }
+  .vitejteCont {
+    font-size: 2rem;
+  }
+  .vitejte1 {
+    left: 35%;
+  }
+  .vitejte2 {
+    left: 33%;
+  }
+
   .FooterD {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -1210,6 +1228,16 @@ tr:nth-child(even) {
   }
   .navLinks a {
     font-size: 15px;
+  }
+  .uvodSliderCont {
+    background-image: url(https://res.cloudinary.com/tomastuser/image/upload/v1587555050/xypg4yxk6drpn00dysd9.jpg);
+    background-position: 100% 50%;
+    background-size: 200%;
+    background-repeat: no-repeat;
+  }
+
+  .uvodSlider img {
+    opacity: 0;
   }
 
   .logoCont {
@@ -1256,6 +1284,12 @@ tr:nth-child(even) {
   .foto img {
     max-width: 80vw;
   }
+  .vitejte1 {
+    left: 35%;
+  }
+  .vitejte2 {
+    left: 33%;
+  }
 }
 
 /* MOBILE NAV */
@@ -1281,16 +1315,16 @@ tr:nth-child(even) {
     font-size: 2.9vh;
   }
   .logoCont {
-    height: 8vh;
+    height: 7vh;
     margin-top: 0vh;
-    margin-right: 1vw;
+    margin-right: 0vw;
   }
   .logoText img {
-    max-height: 11vh;
-    margin-top: 0vh;
+    max-height: 8vh;
+    margin-top: 0.5vh;
   }
   .logo {
-    margin-top: 3vh;
+    margin-top: 1.5vh;
   }
   .navLinks a {
     width: 100%;
@@ -1355,6 +1389,14 @@ tr:nth-child(even) {
 
   .mainTextCont {
     grid-template-columns: 1fr 10fr 1fr;
+  }
+
+  .uvodSliderCont {
+    background-size: 300%;
+  }
+
+  .sipka {
+    right: 46%;
   }
   .aktualita {
     width: 90%;
@@ -1526,6 +1568,12 @@ tr:nth-child(even) {
     text-transform: uppercase;
     font-size: 2em;
   }
+  .vitejte1 {
+    left: 30%;
+  }
+  .vitejte2 {
+    left: 26%;
+  }
 }
 
 /* SMALL MOBILE NAV */
@@ -1547,6 +1595,16 @@ tr:nth-child(even) {
   }
   .caraNav {
     width: 440%;
+  }
+  .uvodSliderCont {
+    background-size: 400%;
+    background-position: 100% 60%;
+  }
+  .vitejte1 {
+    left: 16%;
+  }
+  .vitejte2 {
+    left: 18%;
   }
   .aktualita img {
     max-height: none;

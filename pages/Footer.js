@@ -6,11 +6,8 @@ import {
   faPhone,
 } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 
 const Footer = () => {
-  const d = new Date();
-
   return (
     <div className='Footer'>
       <div className='FooterD'>
@@ -34,14 +31,15 @@ const Footer = () => {
           <ul>
             <li>
               <h3>
-                <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />{' '}
+                <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />
                 {'  '}
                 info@lesnikavyl.cz
               </h3>
             </li>
             <li>
               <h3>
-                <FontAwesomeIcon icon={faHome} size='1x' fixedWidth />{' '}
+                <FontAwesomeIcon icon={faHome} size='1x' fixedWidth />
+                {'  '}
                 Hostěnická 626, Pozořice
               </h3>
             </li>
@@ -57,7 +55,8 @@ const Footer = () => {
                   style={{ color: 'black' }}
                   href='https://www.facebook.com/spolekKavyl/'
                 >
-                  <FontAwesomeIcon icon={faFacebookF} size='1x' fixedWidth />{' '}
+                  <FontAwesomeIcon icon={faFacebookF} size='1x' fixedWidth />
+                  {'  '}
                   spolekKavyl
                 </a>
               </h3>
@@ -86,14 +85,15 @@ const Footer = () => {
           <ul>
             <li>
               <h3>
-                <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />{' '}
+                <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />
                 {'  '}
                 info@lesnikavyl.cz
               </h3>
             </li>
             <li>
               <h3>
-                <FontAwesomeIcon icon={faHome} size='1x' fixedWidth />{' '}
+                <FontAwesomeIcon icon={faHome} size='1x' fixedWidth />
+                {'  '}
                 Hostěnická 626, Pozořice
               </h3>
             </li>
@@ -109,7 +109,8 @@ const Footer = () => {
                   style={{ color: 'black' }}
                   href='https://www.facebook.com/spolekKavyl/'
                 >
-                  <FontAwesomeIcon icon={faFacebookF} size='1x' fixedWidth />{' '}
+                  <FontAwesomeIcon icon={faFacebookF} size='1x' fixedWidth />
+                  {'  '}
                   spolekKavyl
                 </a>
               </h3>
