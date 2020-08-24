@@ -21,7 +21,7 @@ const Uvod = () => {
       <div className='vitejteCont'>
         <div
           className={`vitejte ${counter === 0 ? 'active' : 'disabled'}`}
-          style={{ left: '39%' }}
+          style={{ left: '38%', top: '25%' }}
         >
           Vítejte
           <br />

@@ -29,7 +29,7 @@ const Footer2 = () => {
       <div className='copyright'>
         <h3>
           <FontAwesomeIcon icon={faCopyright} size='1x' fixedWidth />
-          Kavyl z.s.
+          &nbsp;Kavyl z.s.
           {d.getFullYear()}
         </h3>
       </div>
