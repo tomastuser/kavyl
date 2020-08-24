@@ -114,7 +114,7 @@ button {
   width: 100%;
   color: black;
   cursor: pointer;
-  background-color: #decbf0;
+  background-color: #fdfdec;
   font-family: Marianka, 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -203,21 +203,13 @@ tr:nth-child(even) {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
+  margin-top: 3vh;
 }
-.logoText {
-  font-family: Marianka, 'Roboto Condensed', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
+
+.logoText img {
+  max-height: 11vh;
 }
-.logoText a {
-  text-decoration: none;
-  font-size: 2.9vh;
-  color: #3f3f3f;
-}
-.logoText p {
-  font-size: 1.3vh;
-}
+
 .logoCont {
   height: 8vh;
   margin-right: 1vw;
@@ -305,7 +297,23 @@ tr:nth-child(even) {
   margin-top: 6vh;
   margin-bottom: 6vh;
 }
+
+.fotoRandomImg {
+  max-width: 90%;
+  background-repeat: no-repeat;
+  background-image: url(./public/LH_ramecek_foto.png),
+    url(./public/LD_ramecek_foto.png), url(./public/PH_ramecek_foto.png),
+    url(./public/PD_ramecek_foto.png);
+  background-position: left top, left bottom, right top, right bottom;
+  background-size: 25px;
+}
 .fotoRandom img {
+  max-height: 80vh;
+  max-width: 100%;
+  border-radius: 60px;
+}
+
+.portait {
   width: 60%;
 }
 
@@ -326,9 +334,9 @@ tr:nth-child(even) {
   text-align: left;
   width: 40px;
   height: 40px;
-  padding-bottom: 22px;
+  padding-bottom: 24px;
   padding-right: 22px;
-  background-color: #decbf0;
+  background-color: #fdfdec;
   color: black;
   border: solid;
   border-image: url('https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png')
@@ -813,12 +821,48 @@ tr:nth-child(even) {
   text-align: left;
   margin: 1vw;
   border: solid;
-  border-image: url(https://res.cloudinary.com/tomastuser/image/upload/v1596880464/caraNav_awl5dy.png)
-    38 repeat;
+  border-image: url(./public/caraNav12.png) 38 repeat;
   border-width: 20px;
-  border-image-outset: 3px;
-  padding: 2vh;
-  background-color: #decbf0;
+  border-image-outset: -20px;
+  background-color: #fdfdec;
+  padding: 4vh;
+}
+
+.aktualitaPozadi1 {
+  background-image: url(./public/slez51.png);
+  background-position: -8vw -4.5vh;
+  background-repeat: no-repeat;
+  background-size: 800px;
+}
+.aktualitaPozadi2 {
+  background-image: url(./public/zvonek56.png);
+  background-position: -16vw -40vh;
+  background-repeat: no-repeat;
+  background-size: 1100px;
+}
+.aktualitaPozadi3 {
+  background-image: url(./public/siska45.png);
+  background-position: -3vw -2vh;
+  background-repeat: no-repeat;
+  background-size: 900px;
+}
+.aktualitaPozadi4 {
+  background-image: url(./public/slez51.png);
+  background-position: -8vw -4.5vh;
+  background-repeat: no-repeat;
+  background-size: 800px;
+}
+.aktualitaPozadi5 {
+  background-image: url(./public/zvonek56.png);
+  background-position: -16vw -40vh;
+  background-repeat: no-repeat;
+  background-size: 1100px;
+}
+.aktualitaPozadi6 {
+  background-image: url(./public/siska45.png);
+  background-position: -3vw -2vh;
+  background-repeat: no-repeat;
+  background-size: 900px;
 }
 
 .aktualitaZastupceNadpis {
@@ -857,7 +901,7 @@ tr:nth-child(even) {
 
 .aktualitaZastupce .button {
   flex-grow: 0;
-  background-color: #fdfdec;
+  background-color: transparent;
   color: black;
   margin-top: 10px;
   width: 100%;
@@ -865,7 +909,7 @@ tr:nth-child(even) {
 }
 
 .aktualitaZastupce .button:hover {
-  background-color: #f2e4ff;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .aktualitaZastupce li {
@@ -1031,7 +1075,7 @@ tr:nth-child(even) {
   list-style: none;
 }
 
-/* TABLET NAV */
+/* BIG TABLET NAV */
 
 @media screen and (max-width: 1280px) {
   .navLinks {
@@ -1042,6 +1086,13 @@ tr:nth-child(even) {
     grid-template-columns: auto auto auto;
     padding: 2vw;
     padding-top: 4vw;
+  }
+  .aktuality {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+  }
+  .aktualitaZastupce img {
+    padding-left: 1vw;
   }
 
   .Footer ul {
@@ -1069,19 +1120,22 @@ tr:nth-child(even) {
   .navLinks a {
     font-size: 15px;
   }
-  .logoText a {
-    font-size: 1.8vh;
-  }
-  .logoText {
-    margin-top: 0.2vh;
-  }
+
   .logoCont {
     height: 5vh;
+    margin-top: 0.5vh;
+    margin-right: 0.5vw;
   }
   .logo {
     width: 30%;
     justify-content: space-between;
     margin-left: 1vw;
+    margin-top: 1vh;
+  }
+
+  .logoText img {
+    max-height: 6vh;
+    margin-top: 0.5vh;
   }
   .caraNav {
     width: 200%;
@@ -1092,13 +1146,6 @@ tr:nth-child(even) {
 
   .aktualita {
     width: 75%;
-  }
-  .aktuality {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: row;
-  }
-  .aktualitaZastupce img {
-    padding-left: 1vw;
   }
 
   .odrazkyUvodContainer {
@@ -1149,6 +1196,15 @@ tr:nth-child(even) {
   }
   .logoCont {
     height: 8vh;
+    margin-top: 0vh;
+    margin-right: 1vw;
+  }
+  .logoText img {
+    max-height: 11vh;
+    margin-top: 0vh;
+  }
+  .logo {
+    margin-top: 3vh;
   }
   .navLinks a {
     width: 100%;

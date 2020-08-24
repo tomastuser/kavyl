@@ -29,8 +29,12 @@ const Aktuality = ({ aktuality, strana }) => {
         <h1>Aktuality</h1>
         <br />
         <div className='aktuality'>
-          {aktualityZde.map((aktualita) => (
-            <AktualitaZastupce key={aktualita.id} aktualita={aktualita} />
+          {aktualityZde.map((aktualita, index) => (
+            <AktualitaZastupce
+              key={aktualita.id}
+              aktualita={aktualita}
+              pozadi={`aktualitaPozadi${index + 1}`}
+            />
           ))}
         </div>
         <br />

@@ -146,7 +146,7 @@ function Nav() {
             <div className='logoText'>
               <Link href='/'>
                 <a type='button'>
-                  <h1>Kavyl</h1>
+                  <img src='/kavyl.png' alt='Kavyl logo' />
                 </a>
               </Link>
             </div>

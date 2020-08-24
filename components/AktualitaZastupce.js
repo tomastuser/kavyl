@@ -3,8 +3,8 @@ import React from 'react';
 import Link from 'next/link';
 import { PropTypes } from 'prop-types';
 
-const AktualitaZastupce = ({ aktualita }) => (
-  <div className='aktualitaZastupce'>
+const AktualitaZastupce = ({ aktualita, pozadi }) => (
+  <div className={`aktualitaZastupce ${pozadi}`}>
     <Link href={`/aktuality/${aktualita.id}`}>
       <h4 className='aktualitaZastupceNadpis'>{aktualita.Nadpis}</h4>
     </Link>
@@ -32,6 +32,7 @@ AktualitaZastupce.propTypes = {
     Text: PropTypes.string,
     Nadpis: PropTypes.string,
   }).isRequired,
+  pozadi: PropTypes.string.isRequired,
 };
 
 export default AktualitaZastupce;

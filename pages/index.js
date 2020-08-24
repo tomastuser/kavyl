@@ -36,15 +36,24 @@ const App = ({ aktuality }) => {
             <div className='aktuality'>
               {serazeniOdNejvyssiho()
                 .slice(0, 3)
-                .map((aktualita) => (
-                  <AktualitaZastupce key={aktualita.id} aktualita={aktualita} />
+                .map((aktualita, index) => (
+                  <AktualitaZastupce
+                    key={aktualita.id}
+                    aktualita={aktualita}
+                    pozadi={`aktualitaPozadi${index + 1}`}
+                  />
                 ))}
             </div>
             <Link href='/onas/aktuality'>
               <button
                 type='button'
                 className='button'
-                style={{ width: '15%', marginBottom: '0', marginTop: '0' }}
+                style={{
+                  width: '15%',
+                  marginBottom: '0',
+                  marginTop: '0',
+                  minWidth: '260px',
+                }}
               >
                 Všechny příspěvky
               </button>

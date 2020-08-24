@@ -20,10 +20,12 @@ const FotoRandom = () => {
 
   return (
     <div className='fotoRandom'>
-      {fotoURLs.map(
-        (url, index) =>
-          index === randomFoto && <img alt={randomFoto} src={url} />
-      )}
+      <div className='fotoRandomImg'>
+        {fotoURLs.map(
+          (url, index) =>
+            index === randomFoto && <img alt={randomFoto} src={url} />
+        )}
+      </div>
     </div>
   );
 };
