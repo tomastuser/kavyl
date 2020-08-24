@@ -558,12 +558,12 @@ tr:nth-child(even) {
   position: absolute;
   color: rgb(253, 253, 236);
   text-align: center;
-  bottom: 2vh;
-  right: 1vw;
+  bottom: 0.8vh;
+  right: 48vw;
   cursor: pointer;
 }
 .sipka img {
-  height: 45vh;
+  height: 15vh;
 }
 
 .vitejteCont {
@@ -581,9 +581,9 @@ tr:nth-child(even) {
   font-family: Marianka, 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   color: rgb(253, 253, 236);
-  text-align: right;
-  top: 5%;
-  right: 40%;
+  text-align: center;
+  top: 31%;
+  left: 37%;
   font-size: 35px;
 }
 

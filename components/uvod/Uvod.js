@@ -19,17 +19,24 @@ const Uvod = () => {
         </div>
       </div>
       <div className='vitejteCont'>
-        <div className={`vitejte ${counter === 0 ? 'active' : 'disabled'}`}>
+        <div
+          className={`vitejte ${counter === 0 ? 'active' : 'disabled'}`}
+          style={{ left: '39%' }}
+        >
           Vítejte
           <br />
-          na&nbsp; stránkách&nbsp; Kavylu!
+          na&nbsp; stránkách
+          <br />
+          spolku&nbsp; Kavyl!
         </div>
         <div className={`vitejte ${counter === 1 ? 'active' : 'disabled'}`}>
-          SPOLKU,
+          Vracíme &nbsp;dětem
           <br />
-          KTERÝ &nbsp;VRACÍ &nbsp;DĚTEM&nbsp; PŘÍRODU
+          přírodu a&nbsp; dětství
           <br />
-          A&nbsp; DĚTSTVÍ&nbsp; NA &nbsp;LUKÁCH A&nbsp;&nbsp; V &nbsp;LESÍCH
+          na &nbsp;lukách
+          <br />
+          a&nbsp;&nbsp; v &nbsp;LESÍCH
         </div>
       </div>
       <div
@@ -39,7 +46,7 @@ const Uvod = () => {
         role='button'
         tabIndex={0}
       >
-        <img alt='sipka' src='/sipky.png' />
+        <img alt='sipka' src='/sipkaB.png' />
       </div>
     </div>
   );
