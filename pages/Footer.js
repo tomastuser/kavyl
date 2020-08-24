@@ -47,15 +47,8 @@ const Footer = () => {
             </li>
             <li>
               <h3>
-                <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth /> 777 145
-                343
-              </h3>
-            </li>
-            <li>
-              <h3>
-                <FontAwesomeIcon icon={faCopyright} size='1x' fixedWidth />{' '}
-                Kavyl z.s.
-                {d.getFullYear()}
+                <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth />
+                777 145 343
               </h3>
             </li>
             <li>
@@ -106,15 +99,8 @@ const Footer = () => {
             </li>
             <li>
               <h3>
-                <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth /> 777 145
-                343
-              </h3>
-            </li>
-            <li>
-              <h3>
-                <FontAwesomeIcon icon={faCopyright} size='1x' fixedWidth />{' '}
-                Kavyl z.s.
-                {d.getFullYear()}
+                <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth />
+                777 145 343
               </h3>
             </li>
             <li>
