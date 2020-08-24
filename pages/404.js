@@ -16,14 +16,21 @@ const PageNotFound = () => {
     <div className='mainTextCont'>
       <div className='mainText'>
         <h1>404 - STRÁNKA NENALEZENA</h1>
-        <h2>
-          {zvirata.map(
-            (iconName, index) =>
-              index === randomAnimal && (
-                <FontAwesomeIcon icon={iconName} size='3x' fixedWidth />
-              )
-          )}
-        </h2>
+        <div>
+          <h1>
+            {zvirata.map(
+              (iconName, index) =>
+                index === randomAnimal && (
+                  <FontAwesomeIcon
+                    key={iconName}
+                    icon={iconName}
+                    size='3x'
+                    fixedWidth
+                  />
+                )
+            )}
+          </h1>
+        </div>
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ const Prednasky = () => {
             Bubnohrátky se Soňou Štoudkovou – ve spolupráci s Knihovnou Jiřího
             Mahena pořádáme seminář muzikoterapie
           </li>
-          <li>Kurzy storytellingu pod vedením Martina Háka</li>
+          <li>Kurzy storytellingu pod vedením Martina Haka</li>
           <li>zdravotnický seminář pro průvodce klubů</li>
         </ul>
         <FotoRandom />

@@ -5,6 +5,7 @@ import {
   faHome,
   faPhone,
 } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 
 const Footer = () => {
@@ -33,36 +34,39 @@ const Footer = () => {
           <ul>
             <li>
               <h3>
-                <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />
+                <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />{' '}
                 {'  '}
                 info@lesnikavyl.cz
               </h3>
             </li>
             <li>
               <h3>
-                <FontAwesomeIcon icon={faHome} size='1x' fixedWidth />
-                Hostěnická 626, 664 07
-              </h3>
-            </li>
-            <a href='https://www.facebook.com/spolekKavyl/' className='FBLogo'>
-              <img
-                className='fb'
-                style={{ width: '50px' }}
-                alt=''
-                src='https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg'
-              />
-            </a>
-            <li>
-              <h3>
-                <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth />
-                777 145 343
+                <FontAwesomeIcon icon={faHome} size='1x' fixedWidth />{' '}
+                Hostěnická 626, Pozořice
               </h3>
             </li>
             <li>
               <h3>
-                <FontAwesomeIcon icon={faCopyright} size='1x' fixedWidth />
+                <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth /> 777 145
+                343
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <FontAwesomeIcon icon={faCopyright} size='1x' fixedWidth />{' '}
                 Kavyl z.s.
                 {d.getFullYear()}
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a
+                  style={{ color: 'black' }}
+                  href='https://www.facebook.com/spolekKavyl/'
+                >
+                  <FontAwesomeIcon icon={faFacebookF} size='1x' fixedWidth />{' '}
+                  spolekKavyl
+                </a>
               </h3>
             </li>
           </ul>
@@ -89,36 +93,39 @@ const Footer = () => {
           <ul>
             <li>
               <h3>
-                <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />
+                <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />{' '}
                 {'  '}
                 info@lesnikavyl.cz
               </h3>
             </li>
             <li>
               <h3>
-                <FontAwesomeIcon icon={faHome} size='1x' fixedWidth />
-                Hostěnická 626, 664 07
-              </h3>
-            </li>
-            <a href='https://www.facebook.com/spolekKavyl/' className='FBLogo'>
-              <img
-                className='fb'
-                style={{ width: '50px' }}
-                alt=''
-                src='https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg'
-              />
-            </a>
-            <li>
-              <h3>
-                <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth />
-                777 145 343
+                <FontAwesomeIcon icon={faHome} size='1x' fixedWidth />{' '}
+                Hostěnická 626, Pozořice
               </h3>
             </li>
             <li>
               <h3>
-                <FontAwesomeIcon icon={faCopyright} size='1x' fixedWidth />
+                <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth /> 777 145
+                343
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <FontAwesomeIcon icon={faCopyright} size='1x' fixedWidth />{' '}
                 Kavyl z.s.
                 {d.getFullYear()}
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a
+                  style={{ color: 'black' }}
+                  href='https://www.facebook.com/spolekKavyl/'
+                >
+                  <FontAwesomeIcon icon={faFacebookF} size='1x' fixedWidth />{' '}
+                  spolekKavyl
+                </a>
               </h3>
             </li>
           </ul>

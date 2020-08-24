@@ -5,7 +5,7 @@ import { PropTypes } from 'prop-types';
 
 import AktualitaZastupce from '../components/AktualitaZastupce';
 import OdrazkyUvod from '../components/uvod/OdrazkyUvod';
-import Andel from '../components/uvod/Andel';
+import Uvod from '../components/uvod/Uvod';
 
 const App = ({ aktuality }) => {
   const serazeniOdNejvyssiho = () => {
@@ -30,7 +30,7 @@ const App = ({ aktuality }) => {
             />
           </div>
           <div className='uvodAktuality'>
-            <Andel />
+            <Uvod />
 
             <h1>Nejnovější aktuality</h1>
             <div className='aktuality'>
